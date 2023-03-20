@@ -70,7 +70,7 @@ resource "oci_core_instance" "generated_oci_core_instance" {
 }
 
 resource "oci_core_app_catalog_subscription" "generated_oci_core_app_catalog_subscription" {
-	compartment_id = "ocid1.tenancy.oc1..aaaaaaaanneylhk3ibv2dmorxqgklcloydwnror5b3fs4ag7dlrbsiwkjdea"
+	compartment_id = "<<Compartment ocid>>"
 	eula_link = "${oci_core_app_catalog_listing_resource_version_agreement.generated_oci_core_app_catalog_listing_resource_version_agreement.eula_link}"
 	listing_id = "${oci_core_app_catalog_listing_resource_version_agreement.generated_oci_core_app_catalog_listing_resource_version_agreement.listing_id}"
 	listing_resource_version = "23.1.1-ol7.9-22.08.29-230118-1"
