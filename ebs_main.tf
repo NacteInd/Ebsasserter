@@ -45,11 +45,11 @@ resource "oci_core_instance" "generated_oci_core_instance" {
 		recovery_action = "RESTORE_INSTANCE"
 	}
 	availability_domain = "IFUV:US-ASHBURN-AD-1"
-	compartment_id = "ocid1.tenancy.oc1..aaaaaaaanneylhk3ibv2dmorxqgklcloydwnror5b3fs4ag7dlrbsiwkjdea"
+	compartment_id = "Your compartment id"
 	create_vnic_details {
 		assign_private_dns_record = "true"
 		assign_public_ip = "true"
-		subnet_id = "ocid1.subnet.oc1.iad.aaaaaaaaxlgss5jier3km4iasesmyfqzylsdddxxffla6jid3mrcakjpdl7q"
+		subnet_id = "Your Subnet ID"
 	}
 	display_name = "<<Image Name>>"
 	instance_options {
@@ -57,7 +57,7 @@ resource "oci_core_instance" "generated_oci_core_instance" {
 	}
 
 	metadata = {
-		"ssh_authorized_keys" = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDTOkiuf5GdUqrE2oPca9epAZmMHMlo1Outs57b7jPB97omGHR+sJOPmjoK10fTL6sfieUJyiY+lPUusZywcwYJPJhAf2YEi/w5JdETrSkHllcr3yZzM0/2wUMFXeYep4B5U5Yx5/dKAIv+YcVXFZClFzCeDhUYe4V5XC5GGXWegUdAyTQrQiHAFCgx9AUQ+O6MnoxWyXkwjIlxiNF4t0JhPI5RwHWd+/hYrQvd+lKNO2Y6UZFOa+cAOreBnq3D3UOjq3261OKfCt4xOYRBKr5C4Rrd2BhdzS4wDKepXVFPOiQ+JYUa96DpI8KEkskMzmou8y9kpPhKIIlKO6Hu4dyP ssh-key-2023-03-21"
+		"ssh_authorized_keys" = "place your ssh pub key"
 	}
 	shape = "VM.Standard.E4.Flex"
 	shape_config {
