@@ -3,7 +3,7 @@ resource "oci_identity_domain" "test_domain" {
     description = "domain"
     display_name = "Terraform"
     home_region = "us-ashburn-1"
-    license_type = "Free"
+    license_type = "oracle-apps-premium"
 }
 
 
