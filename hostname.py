@@ -1,0 +1,8 @@
+connect('weblogic','A9206486290a@','t3://132.145.160.19:9071')
+edit()
+startEdit()
+cd('Servers/ebsasserter_server_1/SSL/ebsasserter_server_1')
+set('HostnameVerificationIgnored',1)
+save()
+activate()
+exit()
