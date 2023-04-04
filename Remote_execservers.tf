@@ -73,7 +73,7 @@ resource "null_resource" "remote-exec" {
       "cd /home/opc/scripts/",
       "ls -a /",
       "sudo chmod 755 ebsasserter.sh",
-      "./ebsasserter.sh",
+      "echo ${var.ebs_url} ${var.app_serverid} ${var.IDCS_GUIID} ${var.weblogic_password} ${var.weblogic_url} ${var.admin_password} ${var.admin_url} ${var.ds_url} ${var.ds_drive} ${var.ds_username} ${var.ds_password} ${var.ds_targetname} ${var.clientid} ${var.secret} ${var.url_forjar}|./ebsasserter.sh",
       "python3 python.py"
     ]
   }
