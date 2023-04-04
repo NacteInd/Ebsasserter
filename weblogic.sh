@@ -9,8 +9,6 @@ echo "Enter app_serverid"
 read app_serverid
 echo "Enter IDCS GUI ID"
 read IDCS_GUIID
-echo "Enter wallet path"
-read wallet_path
 echo "Enter weblogic_password"
 read weblogic_password
 echo "Enter weblogic_url"
@@ -75,7 +73,7 @@ sudo sed -i 's+https://ebs.example.com:8001/+$ebs_url/+g' bridge.properties
 #sudo sed -i 's/visionDS/dsname/g' bridge.properties
 sudo sed -i 's/idcs-example/$IDCS_GUIID/g' bridge.properties
 #sudo sed -i 's/#post.logout/post.logout/g' bridge.properties
-sudo sed -i 's/\[PATH_OF_THE_WALLET]/\$wallet_path/g' bridge.properties
+#sudo sed -i 's/\[PATH_OF_THE_WALLET]/\$wallet_path/g' bridge.properties
 #sudo sed -i 's/#idcs.user.identifier/idcs.user.identifier/g' bridge.properties
 #sudo sed -i 's+email/username>+username+g' bridge.properties
 sudo mv /opt/ebssdk/WEB-INF/bridge.properties /opt/ebssdk/WEB-INF/bridgecopy.properties
